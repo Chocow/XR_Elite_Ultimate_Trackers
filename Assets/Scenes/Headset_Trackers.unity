@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &731094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 19588385245968726, guid: e5aab3d37285b494ca115cbb5a083852, type: 3}
+  m_PrefabInstance: {fileID: 2033394585}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &16671354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4411,6 +4416,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 796652407307068396, guid: e5aab3d37285b494ca115cbb5a083852, type: 3}
   m_PrefabInstance: {fileID: 2033394585}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1424512803
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731094}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1433704397
 GameObject:
   m_ObjectHideFlags: 0
@@ -5609,6 +5636,11 @@ Transform:
   - {fileID: 1424512800}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1962565484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7893242311767488845, guid: e5aab3d37285b494ca115cbb5a083852, type: 3}
+  m_PrefabInstance: {fileID: 2033394585}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1997540620
 GameObject:
   m_ObjectHideFlags: 0
@@ -5949,10 +5981,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3410144435306451211, guid: e5aab3d37285b494ca115cbb5a083852, type: 3}
+      propertyPath: m_HealthBar
+      value: 
+      objectReference: {fileID: 1962565484}
+    - target: {fileID: 7452963972485264033, guid: e5aab3d37285b494ca115cbb5a083852, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452963972485264033, guid: e5aab3d37285b494ca115cbb5a083852, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 19588385245968726, guid: e5aab3d37285b494ca115cbb5a083852, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1424512803}
   m_SourcePrefab: {fileID: 100100000, guid: e5aab3d37285b494ca115cbb5a083852, type: 3}
 --- !u!1001 &2037987272
 PrefabInstance:
