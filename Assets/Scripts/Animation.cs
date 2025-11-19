@@ -3,19 +3,16 @@ using UnityEngine;
 public class Animation : MonoBehaviour
 {
     private float timerBullets;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField, Range(0.1f, 5f)] private float timeToLive = 0.5f;
+    [SerializeField] private float speed = 5f;
 
     // Update is called once per frame
     void Update()
     {
         timerBullets += Time.deltaTime;
-        transform.position += new Vector3(0f, 0f, 0.05f);
+        transform.position += transform.forward * speed * Time.deltaTime;
 
-        if (timerBullets >= 0.5f)
+        if (timerBullets >= timeToLive)
         {
             Destroy(gameObject);
         }

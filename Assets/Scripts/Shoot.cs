@@ -5,6 +5,8 @@ public class Shoot : MonoBehaviour
     [SerializeField]
     private GameObject bullets;
     private float shootRate;
+    [SerializeField, Range(0.1f, 5f)] private float timeToWaitShoot = 2f;
+    [SerializeField] private Transform spawnBullet;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,9 +17,14 @@ public class Shoot : MonoBehaviour
     void Update()
     {
         shootRate += Time.deltaTime;
-        if(shootRate >= 2f)
+        if(shootRate >= timeToWaitShoot)
         {
-            Instantiate(bullets, transform.position + new Vector3(0.02f, 0.05f, 0.5f), transform.rotation);
+            GameObject go = Instantiate(bullets, spawnBullet);
+            go.transform.localPosition = Vector3.zero;
+            go.transform.parent = null;
+
+
+
             shootRate = 0f;
         }
     }
